@@ -1,9 +1,16 @@
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
   font-family: "Montserrat";
 }
 
@@ -22,65 +29,13 @@ a {
   margin: 0 auto;
 }
 
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
+li {
+  list-style: none;
 }
 
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
-}
+/* Ketik code Anda dibawah */
 
-.top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
-}
-
-.btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
+/*header*/
 header {
   height: 65px;
   width: 100%;
@@ -141,7 +96,12 @@ header {
 }
 
 .navbar a:hover, .dropdown:hover {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(102, 102, 102, 0.5);
+  color: #fff;
+}
+
+.dropbtn:hover {
+  color: #fff;
 }
 
 .dropdown-content {
@@ -165,116 +125,116 @@ header {
 
 .dropdown-content a:hover {
   background-color: #ddd;
+  color: #666;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-/*.header-right {
-  float: right;
-  margin-right: -25px;
+/*-------------------------------------------------------------------------*/
+.main{
+  padding: 100px 80px;
 }
 
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
+.copy-container h1{
+  font-size: 140px;
 }
 
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-*/
-/* Tambahkan CSS untuk menu-icon */
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  /* Gantikan property display ke none */
-  display: none;
+.copy-container span{
+  color:#ff4a4a;
 }
 
-
-.lesson-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
+.copy-container h2{
+  font-size: 60px;
 }
 
-.heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
+.lessons{
+  margin-top:100px;
+  height: 500px;
+ }
+
+.section-title{
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
 }
 
-.heading h2 {
-  font-weight: normal;
+.lesson{
+  margin-right:40px;
+  float:left;
 }
 
-.lesson {
-  float: left;
-  width: 25%;
+.lesson p{
+  font-size:24px;
+  padding-top:30px;
 }
 
-.lesson-icon {
-  position: relative;
+.contact-form{
+  margin-top: 100px;
 }
 
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
+input,textarea{
+  width: 400px;
+  margin: 10px 0px 30px 0px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
 }
 
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 15px;
-  color: #b3aeb5;
+.contact-submit{
+  background-color: #dee7ec;
+  color: #889eab;
 }
 
-.heading h3 {
-  font-weight: normal;
+footer{
+  background-color: #2f5167;
+  color: #fff;
+  height: 120px;
+  padding: 40px;
 }
 
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
+/*footer*/
+.logo-footer {
+    max-height: 20px;
 }
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0 7px #1a7940;
+.top-footer {
+    /*position:absolute;*/
+    top:20%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
 }
-
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+.btn-footer{
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #000070;
+    color: #303030;
+    overflow: hidden;
+    position: relative;
 }
-
-footer img {
-  width: 125px;
+.btn-footer i{
+    line-height: 90px;
+    font-size: 26px;
+    transition: 0.2s linear;
 }
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
+.btn-footer:hover i{
+    transform: scale(1.3);
+    color: #3498db;
 }
-
-footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
+/*.top-footer p{
+    background-color: #303030;
+    width: 100%;
+    padding: 12px;
+    margin-top: 30px;
+    color: white;
+    float: left;
+}*/
+.bottom-footer img{
+  width: 90px;
 }
